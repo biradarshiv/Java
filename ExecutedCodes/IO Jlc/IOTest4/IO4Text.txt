@@ -1,0 +1,38 @@
+package com.jlc.servlet;
+
+import java.io.*;
+import javax.servlet.http.*;
+
+
+public class LoginServlet extends HttpServlet {
+
+public static void main (String arr[])	
+{
+	public void service(HttpServletRequest req, HttpServletResponse res)
+	{
+		try
+		{
+			String unm=req.getParameter("uname");
+			String pwd=req.getParameter("pass");
+			
+			Writer out=res.getWriter();
+			
+			out.write("<html><body><center><h1>");
+			if(unm.equals(pwd))
+			{
+				out.write("Login Successful <br> This is your homepage");
+			}
+			else
+			{
+				out.write("Login Failed <br> Invalid UN or PWD");
+			}
+			out.write("</h1></center></body></html>");
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+}
+}
+
