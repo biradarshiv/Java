@@ -1,0 +1,20 @@
+a:link{
+color:blue;
+font-weight: bold;
+text-decoration: none;
+font-size: 20px;
+text-decoration: none;
+}
+
+a:visited{
+color:white;
+font-weight: bold;
+text-decoration: none;
+font-size:16px;
+}
+
+a:hover{
+color:maroon;
+text-decoration: underline;
+}
+
